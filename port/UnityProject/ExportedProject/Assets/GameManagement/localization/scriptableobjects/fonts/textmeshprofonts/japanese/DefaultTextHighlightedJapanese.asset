@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6d690e3cf957ba05f4778d890da7f36, type: 3}
+  m_Name: DefaultTextHighlightedJapanese
+  m_EditorClassIdentifier:
+  language: 22
+  fontAsset: {fileID: 11400000, guid: 01a3719a907fe3042b1b13aaae862ec8, type: 2}
+  fontMaterial: {fileID: 2100000, guid: 94b8ebaef1fc1434783f1a35d4d89c31, type: 2}

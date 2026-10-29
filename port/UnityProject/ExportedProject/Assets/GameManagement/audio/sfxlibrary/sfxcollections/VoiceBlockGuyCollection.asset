@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7386a1229489fe68268ebf87911e42bd, type: 3}
+  m_Name: VoiceBlockGuyCollection
+  m_EditorClassIdentifier:
+  collectionName: VoiceBlockGuy
+  audioClipContainers:
+  - clipID: 488
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: d5fb0f5960435dc43b21fa485cbe7019, type: 3}
+    - {fileID: 8300000, guid: cc2d77d15ec188340ba90e0a8038b0a9, type: 3}
+    - {fileID: 8300000, guid: 3d54f12716ac1cc499cbc235a8990e1d, type: 3}
+    - {fileID: 8300000, guid: d1671f4e1de279646a9c121b876c031c, type: 3}
+    - {fileID: 8300000, guid: 3527ed9d71e36804ea93c547e74c6e13, type: 3}
+  - clipID: 485
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 43d8979a1b101ae45830625542ef1dbd, type: 3}
+  - clipID: 487
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: c946eda972c72cb479cb867675b38c9a, type: 3}
+    - {fileID: 8300000, guid: 94f3ded5225c85949b9a2c30ce66bcf8, type: 3}
+    - {fileID: 8300000, guid: 2e2048e31eac6014fb27a50e58222f2e, type: 3}
+    - {fileID: 8300000, guid: 39529065ea82c80449b2d655afa41b7d, type: 3}
+    - {fileID: 8300000, guid: 44f5f14d480be76438db641be7809fd6, type: 3}
+    - {fileID: 8300000, guid: 76b2c6b65274e6e4886648347d8b4d76, type: 3}
+    - {fileID: 8300000, guid: 70376e8f053975b448d53e0fbd54d9a3, type: 3}
+    - {fileID: 8300000, guid: 2abdff4824f237f4b8d03ed3fa8e1432, type: 3}
+  - clipID: 489
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 8c68473f107287b47a9357c3a295191b, type: 3}
+    - {fileID: 8300000, guid: 4751de2e99290f54dbb89f4ccf8e4638, type: 3}
+    - {fileID: 8300000, guid: 6c93b25e818a7ad429ee9937ba7013c2, type: 3}
+    - {fileID: 8300000, guid: 3d6dbda5fb53e6042857b7e87bc4175b, type: 3}
+    - {fileID: 8300000, guid: 3f0cd185fd9f0e24fa9d09337b2ac7e3, type: 3}
+    - {fileID: 8300000, guid: d528fa03b7bd0b641a2a2ee54bd608e0, type: 3}
+    - {fileID: 8300000, guid: f23bf35e618ac384f9db5220c7d924cb, type: 3}
+    - {fileID: 8300000, guid: e0bc14bfc30b7b64dbf4676656eef7a0, type: 3}
+    - {fileID: 8300000, guid: d4856eb0b8b17694286db349501326ea, type: 3}
+    - {fileID: 8300000, guid: d03c82cb64d823642b80911f01ead80e, type: 3}
+    - {fileID: 8300000, guid: 995fc5997b55a8d4c85a59046599b0b4, type: 3}
+    - {fileID: 8300000, guid: fba56caa585fab442bd879de3be9b76f, type: 3}
+  - clipID: 484
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: b2810a890a0e15b4cb696ee481377ba8, type: 3}
+  - clipID: 486
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 878c84811b7168c46afe90d54a92d486, type: 3}
+    - {fileID: 8300000, guid: d9bc89396fb43d84e96fab6c209f1809, type: 3}
+    - {fileID: 8300000, guid: a1f1c13acd4646e4f9e3473fc33d00fb, type: 3}
+    - {fileID: 8300000, guid: e7010e084cde7a640801cb34b2bb26a3, type: 3}
+    - {fileID: 8300000, guid: 19caef602a5b3814e88f2d514cb933cf, type: 3}
+    - {fileID: 8300000, guid: cef7755052dd662448e717ce67320f2e, type: 3}
+  - clipID: 498
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: a42ad18e1d0695a47a532636c106a626, type: 3}
+    - {fileID: 8300000, guid: f4a541fcbd31fdb43aa35e84e893f649, type: 3}
+    - {fileID: 8300000, guid: 4004c32d7723e074a9d7acbe2da34d5c, type: 3}
+    - {fileID: 8300000, guid: d905980d3c04fb4409d0bbd47603b2de, type: 3}
+    - {fileID: 8300000, guid: 2d0634514ef485142bc5d858782ae160, type: 3}
+    - {fileID: 8300000, guid: cb648b1a818c3aa44b5da46c34a7f01a, type: 3}
+    - {fileID: 8300000, guid: 9736cd1027ec8ee4e8edbd558ab4ea50, type: 3}
+    - {fileID: 8300000, guid: 2e104a461dfc45d4d9a4ef1a66f44353, type: 3}
+    - {fileID: 8300000, guid: 83212bfd518e0f84491761fc7643aeed, type: 3}
+    - {fileID: 8300000, guid: 49b0076b931136a4ebfe466fab695e79, type: 3}
+    - {fileID: 8300000, guid: d76471ef0d3fd864bb511361501da9ee, type: 3}

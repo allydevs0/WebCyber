@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7386a1229489fe68268ebf87911e42bd, type: 3}
+  m_Name: GrindCableSfxCollection
+  m_EditorClassIdentifier:
+  collectionName: GrindCableSfx
+  audioClipContainers:
+  - clipID: 327
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 67ef77b5e81f3f64a9598b69c0b0224b, type: 3}
+    - {fileID: 8300000, guid: f5f7ddd392f80804385480604ae69733, type: 3}
+    - {fileID: 8300000, guid: 496176265dcdb6049bcaa98fd8c2731d, type: 3}
+    - {fileID: 8300000, guid: 33c46d8cc588d684fa684f59d80af95b, type: 3}
+  - clipID: 11
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 159f5285a7e68cb449ef67cc7f8700d4, type: 3}
+  - clipID: 328
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 646551f0fb4c96c4ea320c1ab99444fa, type: 3}
+    - {fileID: 8300000, guid: 4ff2d887f2a00ee4cb62cf8fba26869d, type: 3}

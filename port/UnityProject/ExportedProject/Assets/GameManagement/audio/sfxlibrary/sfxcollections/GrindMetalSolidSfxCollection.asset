@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7386a1229489fe68268ebf87911e42bd, type: 3}
+  m_Name: GrindMetalSolidSfxCollection
+  m_EditorClassIdentifier:
+  collectionName: GrindMetalSolidSfx
+  audioClipContainers:
+  - clipID: 327
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 38bef3d2d6eb28b4bbec55a20d713046, type: 3}
+    - {fileID: 8300000, guid: 8639541878f8f984581280d360eb5f0b, type: 3}
+    - {fileID: 8300000, guid: a4c8711862afcb04db235c1b3caaa386, type: 3}
+    - {fileID: 8300000, guid: 4ff7abdccdfec0749b270e5555ee8eca, type: 3}
+    - {fileID: 8300000, guid: d5be463d8b00a1b45a3c4a3726a34469, type: 3}
+    - {fileID: 8300000, guid: 07de506feda6f6a478e3548c51d5bb74, type: 3}
+    - {fileID: 8300000, guid: 8ca4d851c5bc7ce46a6d5cf5daaccc9e, type: 3}
+  - clipID: 11
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 910cd5b7564084e4a98ac25807515728, type: 3}
+  - clipID: 328
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 1dd7723a316ba924c9f13b0404e109fd, type: 3}
+    - {fileID: 8300000, guid: e572e632626f7b741876533532d29354, type: 3}
+    - {fileID: 8300000, guid: ff9eac7817d3cd241986e0e64667bf3a, type: 3}
+    - {fileID: 8300000, guid: e5bc3b535b1d133488196b705f59f46e, type: 3}
+    - {fileID: 8300000, guid: 102cdff771172d54896c7b1ddde90897, type: 3}
+    - {fileID: 8300000, guid: 55b932cbda23073468747973af0156ca, type: 3}

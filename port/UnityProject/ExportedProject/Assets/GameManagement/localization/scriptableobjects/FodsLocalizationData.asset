@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2db5095fc30c5c62c70afd62dbc0ec77, type: 3}
+  m_Name: FodsLocalizationData
+  m_EditorClassIdentifier:
+  formatterData: {fileID: 11400000, guid: dfce8d1436cd7f846b54f1841a56f084, type: 2}
+  localizationTextName: Text
+  localizationDialoguesName: Dialogue
+  localizationButtonSizeName: Sizes
+  localizationCreditsName: Credits
+  localizationFileExtension: .fods
+  localizationCharacterNamesName: CharacterNames
+  localizationStageNamesName: StageNames
+  localizationObjectiveTextName: ObjectiveText
+  localizationEmailTextName: EmailMessages
+  localizationNotificationTextName: Notifications
+  localizationSkinTextName: SkinText
+  localizationSubdirectory: Languages

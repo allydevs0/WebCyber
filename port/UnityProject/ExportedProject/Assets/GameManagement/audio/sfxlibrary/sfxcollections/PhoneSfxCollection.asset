@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7386a1229489fe68268ebf87911e42bd, type: 3}
+  m_Name: PhoneSfxCollection
+  m_EditorClassIdentifier:
+  collectionName: PhoneSfx
+  audioClipContainers:
+  - clipID: 306
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 8903c0c7f4464634b978226b5cd40481, type: 3}
+  - clipID: 305
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 05a51f36aec8de844b720d2af3e690b5, type: 3}
+  - clipID: 307
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 602cbca86a51b584ea36af43fc3b1f4a, type: 3}
+  - clipID: 308
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: b679d4e0b6b84cc4282c0fb67b90451d, type: 3}
+  - clipID: 8
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 78524dc70cb90b644a0ea571118e56a9, type: 3}
+  - clipID: 7
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 2471a26fafa44cc409b6bfad46cb8451, type: 3}
+  - clipID: 1004
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: a384f9e4469ef354289b516393a5c0a2, type: 3}
+  - clipID: 1009
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 34c2606aae50b4e4eb3a447521e9855e, type: 3}
+  - clipID: 1006
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 9dd0349c26d196b409422b7f1fa2b0ad, type: 3}
+  - clipID: 1007
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 332111fd8c68d094bb65c19757a46106, type: 3}
+  - clipID: 1008
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 8d06e6580a63bb24883cf5e132151f37, type: 3}

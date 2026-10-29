@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7386a1229489fe68268ebf87911e42bd, type: 3}
+  m_Name: AmbienceSfxCollection
+  m_EditorClassIdentifier:
+  collectionName: AmbienceSfx
+  audioClipContainers:
+  - clipID: 588
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: a16eda31b3effd64e81cfb678a62c487, type: 3}
+  - clipID: 587
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: b131af6f79d47b145b4265840116aec9, type: 3}
+  - clipID: 599
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: e753a9e65161005499fe2411e4852353, type: 3}
+  - clipID: 598
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: e3dee8eece104074d959c5f7ead038ff, type: 3}
+  - clipID: 597
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 0e4aeaed8b236c049ab97ecabed09eb1, type: 3}
+  - clipID: 595
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: ad17b52d49afb3945a525ca7a5ecdab2, type: 3}
+  - clipID: 594
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 43c04c92ade5c0a48bfaa1e742802d3f, type: 3}
+  - clipID: 593
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 16ed7daa923bcb94cbb2140c1a1a32c1, type: 3}
+  - clipID: 592
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 340a9556adbb4fc40a32d548460021b5, type: 3}
+  - clipID: 591
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 23c76467d17f10e4f8fd38aeb804ddd5, type: 3}
+  - clipID: 590
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 177202130ac6b064fb6dd55c72b4e511, type: 3}
+  - clipID: 589
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 396c557fc217c214d9694a6712c3f460, type: 3}
+  - clipID: 766
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 92753197970aaec4e894ceaaca0ea83d, type: 3}
+  - clipID: 871
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: b6b6954deb30c6541b617d04c9c3fded, type: 3}

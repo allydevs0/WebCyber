@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7386a1229489fe68268ebf87911e42bd, type: 3}
+  m_Name: VoiceFrankCollection
+  m_EditorClassIdentifier:
+  collectionName: VoiceFrank
+  audioClipContainers:
+  - clipID: 488
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: a6ce72f52bbf1a14ea8f6f93e9577fe2, type: 3}
+    - {fileID: 8300000, guid: 979750265f04f334fbd6b49018bc9e57, type: 3}
+    - {fileID: 8300000, guid: dc46e3ace240bd943ae2baf162051100, type: 3}
+    - {fileID: 8300000, guid: 4aad7a8ac10ef25438f59815bd4b5b32, type: 3}
+    - {fileID: 8300000, guid: 3e0675e1901699844a85d11065c5a59e, type: 3}
+    - {fileID: 8300000, guid: e17d6f7d386302b4298bfd0a9abcf4c8, type: 3}
+  - clipID: 485
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 1bce3bd0139a0d34296b4d509ef8a5e8, type: 3}
+  - clipID: 487
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: dd1407b7c26d4b54795a4de2c8871d59, type: 3}
+    - {fileID: 8300000, guid: 4fed54074cd7b6a4995391d65bd2547f, type: 3}
+    - {fileID: 8300000, guid: 0ed7cd37129ef7645a37a82bd70a8b30, type: 3}
+    - {fileID: 8300000, guid: ceddf6671de01f44da1e5efbd9b7a228, type: 3}
+    - {fileID: 8300000, guid: 5ea71aef11006d84a81d89ddd5f78cd5, type: 3}
+    - {fileID: 8300000, guid: 170d124018cbcde46b2f0fd5747c4b99, type: 3}
+    - {fileID: 8300000, guid: 99e25fe4ad6d1c34382a765e240f3ada, type: 3}
+    - {fileID: 8300000, guid: 88690604fbd41d444be3768d6df861e0, type: 3}
+  - clipID: 489
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 7f4f4242620feb64da646f8fc3da7ca3, type: 3}
+    - {fileID: 8300000, guid: 0dab04bbd92c114479b193b1535c06c1, type: 3}
+    - {fileID: 8300000, guid: aab2187dbdf17604c99028c0623a4c38, type: 3}
+    - {fileID: 8300000, guid: c07cde74311390e4eb5790cd5705b492, type: 3}
+    - {fileID: 8300000, guid: 35034d4c4cb736d479632529e0fe2cc5, type: 3}
+    - {fileID: 8300000, guid: 20c2b76062af9de4db2ca43d7d7eb6c7, type: 3}
+    - {fileID: 8300000, guid: ab65831931f58e34cab3b5fa5273f818, type: 3}
+    - {fileID: 8300000, guid: 64d4d41450245ee44b82dbfedfea3562, type: 3}
+    - {fileID: 8300000, guid: 2fa7e9d83e486f74da4886f7bd5c9035, type: 3}
+  - clipID: 484
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 51da9efefd0b57e4eaa15f2c6e4c84cc, type: 3}
+  - clipID: 486
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 5bd0d3311baa4984da83eb6ec28845d0, type: 3}
+    - {fileID: 8300000, guid: 2dcaa9b1b4ce8aa4fa8c92be1e99003e, type: 3}
+  - clipID: 498
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: b5e97803e0b10cd40af0ae29f17d9994, type: 3}
+    - {fileID: 8300000, guid: 332c5fd2c048b3b4580448b3d92c8396, type: 3}
+    - {fileID: 8300000, guid: baf06cedde2e5e049a86a81810ef75eb, type: 3}
+    - {fileID: 8300000, guid: ceddf6671de01f44da1e5efbd9b7a228, type: 3}
+    - {fileID: 8300000, guid: d4dab539e542a154695e17b65ecb1c6a, type: 3}
+    - {fileID: 8300000, guid: a89e2696186f4054da2c56db8aac94da, type: 3}
+    - {fileID: 8300000, guid: d71c0d1d2fa27d4488d5c07b21a9c0cd, type: 3}

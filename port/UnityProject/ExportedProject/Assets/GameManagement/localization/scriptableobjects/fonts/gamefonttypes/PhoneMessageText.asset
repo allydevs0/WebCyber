@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17f854c9b2d99dfcd067dafb3f964544, type: 3}
+  m_Name: PhoneMessageText
+  m_EditorClassIdentifier:
+  defaultFont: {fileID: 11400000, guid: b4bff21d244c301458cdd51a8fcaab54, type: 2}
+  fonts:
+  - {fileID: 11400000, guid: b4bff21d244c301458cdd51a8fcaab54, type: 2}
+  - {fileID: 11400000, guid: 2e7d48d47ef4b084488a6a71dbfc0890, type: 2}
+  - {fileID: 11400000, guid: 6e4246a8630eb1640a4d48afd65cf7e9, type: 2}

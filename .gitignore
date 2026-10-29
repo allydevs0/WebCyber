@@ -8,19 +8,50 @@ original/
 *.key
 *.pem
 
-# Ignore ripped binary assets and heavy project folders
-/port/UnityProject/
+# Managed code analysis
 /analysis/managed-code/
+/port/UnityProject/AuxiliaryFiles/
 
-# Unity Project ignores
-/[Pp]ort/[Uu]nity[Pp]roject/[Ll]ibrary/
-/[Pp]ort/[Uu]nity[Pp]roject/[Tt]emp/
-/[Pp]ort/[Uu]nity[Pp]roject/[Oo]bj/
-/[Pp]ort/[Uu]nity[Pp]roject/[Bb]uild/
-/[Pp]ort/[Uu]nity[Pp]roject/[Bb]uilds/
-/[Pp]ort/[Uu]nity[Pp]roject/[Ll]ogs/
-/[Pp]ort/[Uu]nity[Pp]roject/[Uu]ser[Ss]ettings/
-/[Pp]ort/[Uu]nity[Pp]roject/[Mm]emoryCaptures/
+# Heavy ripped binary assets (> 9 GB of unpacked models/audio)
+/port/UnityProject/ExportedProject/Assets/characters/
+/port/UnityProject/ExportedProject/Assets/Stages/
+/port/UnityProject/ExportedProject/Assets/StreamingAssets/
+/port/UnityProject/ExportedProject/Assets/audio/
+/port/UnityProject/ExportedProject/Assets/Mesh/
+/port/UnityProject/ExportedProject/Assets/combined_meshes/
+/port/UnityProject/ExportedProject/Assets/story/
+/port/UnityProject/ExportedProject/Assets/common assets/
+/port/UnityProject/ExportedProject/Assets/fonts/
+/port/UnityProject/ExportedProject/Assets/credits/
+/port/UnityProject/ExportedProject/Assets/Texture2D/
+/port/UnityProject/ExportedProject/Assets/enemies/
+/port/UnityProject/ExportedProject/Assets/GameObject/
+/port/UnityProject/ExportedProject/Assets/ComputeShader/
+/port/UnityProject/ExportedProject/Assets/MonoBehaviour/
+/port/UnityProject/ExportedProject/Assets/Sprite/
+/port/UnityProject/ExportedProject/Assets/games/
+/port/UnityProject/ExportedProject/Assets/Plugins_Disabled/
+/port/UnityProject/ExportedProject/Assets/Scripts_Disabled/
+/port/UnityProject/ExportedProject/Assets/AudioClip/
+/port/UnityProject/ExportedProject/Assets/Font/
+/port/UnityProject/ExportedProject/Assets/Cubemap/
+/port/UnityProject/ExportedProject/Assets/Material/
+/port/UnityProject/ExportedProject/Assets/shadercollections/
+/port/UnityProject/ExportedProject/Assets/demigiant/
+/port/UnityProject/ExportedProject/Assets/editor default resources/
+/port/UnityProject/ExportedProject/Assets/AvatarMask/
+/port/UnityProject/ExportedProject/Assets/sycoforge/
+/port/UnityProject/ExportedProject/Assets/ShaderVariantCollection/
+
+# Unity generated caches and builds
+/[Pp]ort/[Uu]nity[Pp]roject/**/[Ll]ibrary/
+/[Pp]ort/[Uu]nity[Pp]roject/**/[Tt]emp/
+/[Pp]ort/[Uu]nity[Pp]roject/**/[Oo]bj/
+/[Pp]ort/[Uu]nity[Pp]roject/**/[Bb]uild/
+/[Pp]ort/[Uu]nity[Pp]roject/**/[Bb]uilds/
+/[Pp]ort/[Uu]nity[Pp]roject/**/[Ll]ogs/
+/[Pp]ort/[Uu]nity[Pp]roject/**/[Uu]ser[Ss]ettings/
+/[Pp]ort/[Uu]nity[Pp]roject/**/[Mm]emoryCaptures/
 
 # Visual Studio / Rider / VSCode
 .vs/

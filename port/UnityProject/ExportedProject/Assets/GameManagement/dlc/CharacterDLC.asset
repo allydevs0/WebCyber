@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3058292c4527248bc5e695f6bf2566b9, type: 3}
+  m_Name: CharacterDLC
+  m_EditorClassIdentifier:
+  dlcName: Bomb Rush Cyberfunk - Base & Jay
+  steamAppID: 2518220
+  switchAocIndex: 1
+  playstationEntitlementKey: c3c53fcf8639578bd1b2d7ba6c96c318
+  playstationContentLabel: BRCJAYANDBASE000
+  xboxDLCID: 9PPH494XNQ77
+  gogGalaxyProductID: 1587333905

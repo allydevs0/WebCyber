@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6d690e3cf957ba05f4778d890da7f36, type: 3}
+  m_Name: MainButtonTextPressedCyrillic
+  m_EditorClassIdentifier:
+  language: 30
+  fontAsset: {fileID: 11400000, guid: 0799c81fc0d29b647a4b52dd54695dfb, type: 2}
+  fontMaterial: {fileID: 2100000, guid: e992dc87d7186f44f932a9be3aebb4e0, type: 2}

@@ -1,0 +1,14 @@
+namespace Reptile
+{
+	public enum ProgressableType
+	{
+		NONE = 0,
+		GRAFFITI_SPOT_PROGRESS = 1,
+		ENCOUNTER_PROGRESS = 2,
+		NPC_PROGRESS = 3,
+		OBJECT_PROGRESS = 4,
+		STAGE_TRANSITION_PROGRESS = 5,
+		COLLECTABLE_PROGRESS = 6,
+		PHOTO_PROGRESS = 7
+	}
+}

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 500cb7ba0ba8b8d5a6252ac75394daad, type: 3}
+  m_Name: DownhillAchievements
+  m_EditorClassIdentifier:
+  stage: 4
+  stageScore: 13000000
+  scoreAchievement: {fileID: 11400000, guid: 906b926e7c70bac419febfc14aeaddcf, type: 2}
+  graffitiAchievement: {fileID: 11400000, guid: 5b700a56c8f85b14fa12976f7eca2984, type: 2}

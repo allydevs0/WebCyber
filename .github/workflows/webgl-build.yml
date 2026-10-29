@@ -15,6 +15,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
+          fetch-depth: 0
           lfs: true
 
       - name: Cache Unity Library
@@ -37,15 +38,26 @@ jobs:
           projectPath: port/UnityProject/ExportedProject
           buildMethod: WebBuildScript.Build
 
+      - name: Inspect Build Output
+        run: |
+          echo "=== Directory Structure of Output ==="
+          ls -la build/ || true
+          ls -la build/WebGL/ || true
+          find build -maxdepth 3 || true
+
       - name: Upload WebGL Artifact
         uses: actions/upload-artifact@v4
         with:
           name: BombRushCyberfunk-WebAssembly
-          path: build/WebGL/WebGL
+          path: |
+            build/WebGL
+            port/UnityProject/ExportedProject/Builds/WebGL
+          if-no-files-found: warn
 
       - name: Deploy to GitHub Pages (Opcional)
-        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+        if: (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master') && always()
         uses: peaceiris/actions-gh-pages@v3
+        continue-on-error: true
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: build/WebGL/WebGL

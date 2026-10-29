@@ -1,0 +1,57 @@
+using System;
+
+namespace Reptile
+{
+	[Serializable]
+	public enum SfxCollectionID
+	{
+		NONE = -1,
+		AmbienceSfx = 26,
+		CombatSfx = 18,
+		EnvironmentSfx = 19,
+		GenericMovementSfx = 20,
+		GraffitiSfx = 13,
+		GrindCableSfx = 21,
+		GrindMetalHollow = 28,
+		GrindMetalSfx = 3,
+		GrindMetalSolidSfx = 22,
+		MenuSfx = 23,
+		MoveStyle_0_Default = 8,
+		MoveStyle_1_BMX = 9,
+		MoveStyle_2_SkateBoard = 10,
+		MoveStyle_3_Inline = 11,
+		MoveStyle_4_SpecialSB = 12,
+		PhoneSfx = 14,
+		StorySfx = 27,
+		StreetlifeSfx = 24,
+		VoiceAngel = 30,
+		VoiceBlockGuy = 31,
+		VoiceBoarder = 32,
+		VoiceBunGirl = 33,
+		VoiceDJ = 34,
+		VoiceDummy = 35,
+		VoiceEightBall = 36,
+		VoiceEightBallBoss = 37,
+		VoiceFrank = 38,
+		VoiceFutureGirl = 39,
+		VoiceGirl1 = 40,
+		VoiceHeadman = 50,
+		VoiceHeadmanNoJetpack = 51,
+		VoiceJetpackBoss = 41,
+		VoiceLegendFace = 42,
+		VoiceMedusa = 43,
+		VoiceMetalHead = 44,
+		VoicePrince = 45,
+		VoicePufferGirl = 46,
+		VoiceRingDude = 47,
+		VoiceSpaceGirl = 48,
+		VoiceWideKid = 49,
+		VoiceChiefTalk = 57,
+		VoiceDialogue = 62,
+		VoiceRobot = 63,
+		VoiceSkate = 64,
+		VoiceOldhead = 65,
+		MAXID_RESERVED = 66,
+		MAX = 67
+	}
+}

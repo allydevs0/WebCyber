@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7386a1229489fe68268ebf87911e42bd, type: 3}
+  m_Name: MenuSfxCollection
+  m_EditorClassIdentifier:
+  collectionName: MenuSfx
+  audioClipContainers:
+  - clipID: 15
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 3b535bf35e6d1f2429029c7b4a24ac96, type: 3}
+  - clipID: 548
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 1b1143753e7a9164eae6da02e69ec2c9, type: 3}
+  - clipID: 271
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 38244c67e7a378f4a9f3ce0707292b09, type: 3}
+  - clipID: 285
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 19c97db2a67f11746a5fdf845141e54e, type: 3}
+  - clipID: 547
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 97ada0b4ec6273d4986fcb800af96b5d, type: 3}
+  - clipID: 550
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 716311662d621ac498e66d25948382d6, type: 3}
+  - clipID: 280
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: bb793c80246a44049a95169953e73072, type: 3}
+  - clipID: 551
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 03ed3343a2cc9bb46b8811564733547e, type: 3}
+  - clipID: 281
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: bee8dbefc5e5d4c47a1beb8c71c3667e, type: 3}
+  - clipID: 267
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 7c58bc2b2a255074f9d8e6cbccb9191f, type: 3}
+  - clipID: 282
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 6c40eeca5275b704fade7aff884cd0f0, type: 3}
+  - clipID: 283
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: facdd06f8f7cc7d48867985a71ee6ef2, type: 3}
+  - clipID: 371
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 3e1dc539ce0b482429baf30516108cde, type: 3}
+  - clipID: 284
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: be826089fc4e66f49b26d0e721b9ff42, type: 3}
+  - clipID: 922
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 610c787b569c8ed46b7248262a90800f, type: 3}

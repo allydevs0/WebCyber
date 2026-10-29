@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7386a1229489fe68268ebf87911e42bd, type: 3}
+  m_Name: GrindMetalHollowCollection
+  m_EditorClassIdentifier:
+  collectionName: GrindMetalHollow
+  audioClipContainers:
+  - clipID: 468
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 388948f5a2fa3574c929be429bc12e2c, type: 3}
+  - clipID: 467
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: 2563d594eacff2d4b8b96038eb8af9e0, type: 3}
+  - clipID: 327
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: b2f4e48312bd9634b86aab12f2a8995f, type: 3}
+  - clipID: 328
+    lastRandomClip: 1
+    clips:
+    - {fileID: 8300000, guid: 64e247ebae14e22408e6d10702f12caa, type: 3}
+    - {fileID: 8300000, guid: 4b3bfd7519f6bed4896b3d6c5812a3e4, type: 3}
+  - clipID: 11
+    lastRandomClip: 0
+    clips:
+    - {fileID: 8300000, guid: cd5736b593b273b46aff251127f138b9, type: 3}

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17f854c9b2d99dfcd067dafb3f964544, type: 3}
+  m_Name: MenuTimeLineText
+  m_EditorClassIdentifier:
+  defaultFont: {fileID: 11400000, guid: 443a596a52f6aa54983b1002fc2acf34, type: 2}
+  fonts:
+  - {fileID: 11400000, guid: 443a596a52f6aa54983b1002fc2acf34, type: 2}
+  - {fileID: 11400000, guid: 671b01910b8d3164fa9bcf497aaea561, type: 2}
+  - {fileID: 11400000, guid: e0e701a55aea8eb45af9b3a8cd6c48c5, type: 2}
