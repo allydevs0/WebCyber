@@ -31,22 +31,44 @@ jobs:
           restore-keys: |
             Library-WebGL-
 
-      - name: Build WebGL Player via GameCI (Docker Headless)
-        uses: game-ci/unity-builder@v4
-        env:
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-        with:
-          targetPlatform: WebGL
-          unityVersion: 2021.3.20f1
-          projectPath: port/UnityProject/ExportedProject
-          buildMethod: WebBuildScript.Build
+      - name: Setup Unity License File
+        run: |
+          mkdir -p "$HOME/.local/share/unity3d/Unity"
+          echo "${{ secrets.UNITY_LICENSE }}" > "$HOME/.local/share/unity3d/Unity/Unity_lic.ulf"
+          chmod 644 "$HOME/.local/share/unity3d/Unity/Unity_lic.ulf"
+          echo "License file created ($(wc -c < "$HOME/.local/share/unity3d/Unity/Unity_lic.ulf") bytes)"
+
+      - name: Build WebGL via Docker Headless
+        run: |
+          docker run --rm \
+            -v "$GITHUB_WORKSPACE/port/UnityProject/ExportedProject:/project" \
+            -v "$HOME/.local/share/unity3d/Unity:/root/.local/share/unity3d/Unity" \
+            -w /project \
+            unityci/editor:ubuntu-2021.3.20f1-webgl-3 \
+            /opt/unity/Editor/Unity \
+              -batchmode \
+              -nographics \
+              -silent-crashes \
+              -logFile /project/unity-build.log \
+              -projectPath /project \
+              -executeMethod WebBuildScript.Build \
+              -quit || true
+
+      - name: Print Unity Build Log
+        run: |
+          echo "=== UNITY BUILD LOG (Last 200 lines) ==="
+          if [ -f port/UnityProject/ExportedProject/unity-build.log ]; then
+            tail -n 200 port/UnityProject/ExportedProject/unity-build.log
+          else
+            echo "unity-build.log was not created!"
+          fi
 
       - name: Inspect Build Output
         run: |
           echo "=== Directory Structure of Output ==="
           ls -la build/ || true
-          ls -la build/WebGL/ || true
-          find build -maxdepth 3 || true
+          ls -la port/UnityProject/ExportedProject/Builds/ || true
+          find port/UnityProject/ExportedProject/Builds -maxdepth 3 || true
 
       - name: Upload WebGL Artifact
         uses: actions/upload-artifact@v4
@@ -63,4 +85,4 @@ jobs:
         continue-on-error: true
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: build/WebGL
+          publish_dir: port/UnityProject/ExportedProject/Builds/WebGL
