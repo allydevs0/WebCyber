@@ -32,10 +32,14 @@ jobs:
             Library-WebGL-
 
       - name: Setup Unity License File
+        env:
+          UNITY_LICENSE_DATA: ${{ secrets.UNITY_LICENSE }}
         run: |
           mkdir -p "$HOME/.local/share/unity3d/Unity"
-          echo "${{ secrets.UNITY_LICENSE }}" > "$HOME/.local/share/unity3d/Unity/Unity_lic.ulf"
+          printf '%s' "$UNITY_LICENSE_DATA" > "$HOME/.local/share/unity3d/Unity/Unity_lic.ulf"
           chmod 644 "$HOME/.local/share/unity3d/Unity/Unity_lic.ulf"
+          echo "=== First lines of license file ==="
+          head -n 5 "$HOME/.local/share/unity3d/Unity/Unity_lic.ulf"
           echo "License file created ($(wc -c < "$HOME/.local/share/unity3d/Unity/Unity_lic.ulf") bytes)"
 
       - name: Build WebGL via Docker Headless
