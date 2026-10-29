@@ -31,20 +31,23 @@ jobs:
           restore-keys: |
             Library-WebGL-
 
-      - name: Setup Unity Entitlement License File
+      - name: Setup Unity ULF License File
         env:
           UNITY_LICENSE_DATA: ${{ secrets.UNITY_LICENSE }}
         run: |
+          mkdir -p "$HOME/.local/share/unity3d/Unity"
           mkdir -p "$HOME/.config/unity3d/Unity/licenses"
-          printf '%s' "$UNITY_LICENSE_DATA" > "$HOME/.config/unity3d/Unity/licenses/UnityEntitlementLicense.xml"
-          chmod 644 "$HOME/.config/unity3d/Unity/licenses/UnityEntitlementLicense.xml"
-          echo "Entitlement License created ($(wc -c < "$HOME/.config/unity3d/Unity/licenses/UnityEntitlementLicense.xml") bytes)"
+          printf '%s' "$UNITY_LICENSE_DATA" > "$HOME/.local/share/unity3d/Unity/Unity_lic.ulf"
+          printf '%s' "$UNITY_LICENSE_DATA" > "$HOME/.config/unity3d/Unity/licenses/Unity_lic.ulf"
+          chmod 644 "$HOME/.local/share/unity3d/Unity/Unity_lic.ulf"
+          echo "License file created ($(wc -c < "$HOME/.local/share/unity3d/Unity/Unity_lic.ulf") bytes)"
 
       - name: Build WebGL via Docker Headless
         run: |
           docker run --rm \
             -v "$GITHUB_WORKSPACE/port/UnityProject/ExportedProject:/project" \
-            -v "$HOME/.config/unity3d/Unity/licenses:/root/.config/unity3d/Unity/licenses" \
+            -v "$HOME/.local/share/unity3d/Unity:/root/.local/share/unity3d/Unity" \
+            -v "$HOME/.local/share/unity3d/Unity:/usr/share/unity3d/unity" \
             -w /project \
             unityci/editor:ubuntu-2021.3.20f1-webgl-3 \
             /opt/unity/Editor/Unity \
