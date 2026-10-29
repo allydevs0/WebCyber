@@ -1,0 +1,9 @@
+# Registro de Riscos e Estratégias de Mitigação (Pós-Auditoria)
+
+| Risco | Severidade | Impacto | Mitigação Técnica |
+|---|---|---|---|
+| **Diferenças Mono vs IL2CPP (AOT)** | Média-Alta | Em plataformas iOS, a Apple proíbe compilação JIT em tempo de execução. Código que faça uso intenso de `System.Reflection.Emit` ou tipos genéricos não instanciados pode falhar em tempo de execução. | 1. Configurar um arquivo `Assets/link.xml` preservando tipos e métodos reflexivos dos assemblies `Reptile`, `DOTween` e `Newtonsoft.Json`.<br>2. Validar compilação com IL2CPP antecipadamente. |
+| **Dependências de Input Exclusivas de Windows** | Alta | `Rewired_Windows.dll` e `Rewired_DirectInput.dll` realizam chamadas diretas a APIs Win32 (RawInput / DirectInput / XInput) e não funcionam em iOS. | Substituir a camada de captura no `UserInputHandler` por botões táteis virtuais e joystick em tela via Unity UI / Input System. |
+| **Limitações de Memória RAM no iPhone 12** | Média | O iPhone 12 possui 4 GB de memória RAM total. O sistema operacional reserva cerca de 1 a 1.5 GB, restando aproximadamente 2.5 a 3 GB para a aplicação. | 1. Os 633 MB de áudio de música devem permanecer com carregamento sob demanda via streaming (`AudioClipLoadType.Streaming`).<br>2. Compressão de texturas para formatos nativos Apple (ASTC). |
+| **Compatibilidade de Shaders no Metal** | Média | Shaders customizados criados para DirectX 11 podem conter sintaxe não compatível com o compilador Metal do iOS. | Auditar e recompilar os shaders contidos no bundle `common_game_shaders` verificando suporte explícito a Metal. |
+| **Sideload e Assinatura** | Baixa | Sem certificado de desenvolvedor pago da Apple, apps instalados via sideload padrão expiram em 7 dias (exceto via TrollStore). | O alvo especificado é o arquivo `.app` / `.ipa` unsigned para instalação livre via TrollStore ou assinatura automática local via Sideloadly/AltStore. |

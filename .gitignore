@@ -1,0 +1,42 @@
+# Local game copy and extracted proprietary assets
+original/
+*.ipa
+*.app
+*.mobileprovision
+*.p12
+*.cer
+*.key
+*.pem
+
+# Ignore ripped binary assets and heavy project folders
+/port/UnityProject/
+/analysis/managed-code/
+
+# Unity Project ignores
+/[Pp]ort/[Uu]nity[Pp]roject/[Ll]ibrary/
+/[Pp]ort/[Uu]nity[Pp]roject/[Tt]emp/
+/[Pp]ort/[Uu]nity[Pp]roject/[Oo]bj/
+/[Pp]ort/[Uu]nity[Pp]roject/[Bb]uild/
+/[Pp]ort/[Uu]nity[Pp]roject/[Bb]uilds/
+/[Pp]ort/[Uu]nity[Pp]roject/[Ll]ogs/
+/[Pp]ort/[Uu]nity[Pp]roject/[Uu]ser[Ss]ettings/
+/[Pp]ort/[Uu]nity[Pp]roject/[Mm]emoryCaptures/
+
+# Visual Studio / Rider / VSCode
+.vs/
+.idea/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+
+# OS generated
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store

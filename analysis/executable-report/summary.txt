@@ -1,0 +1,7 @@
+﻿Game path: E:\SteamLibrary\steamapps\common\BombRushCyberfunk
+Data path: E:\SteamLibrary\steamapps\common\BombRushCyberfunk\Bomb Rush Cyberfunk_Data
+Executable count: 2
+Data-file count: 253
+Managed candidates: 136
+Data bytes: 1687443922
+Generated: 2026-10-29 17:56:59 -03:00
