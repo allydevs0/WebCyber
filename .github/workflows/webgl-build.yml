@@ -1,0 +1,51 @@
+name: Build WebGL (WebAssembly)
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+      - main
+
+jobs:
+  build:
+    name: Compilar WebAssembly sem Unity local
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Cache Unity Library
+        uses: actions/cache@v4
+        with:
+          path: port/UnityProject/ExportedProject/Library
+          key: Library-WebGL-${{ hashFiles('port/UnityProject/ExportedProject/Assets/**', 'port/UnityProject/ExportedProject/ProjectSettings/**') }}
+          restore-keys: |
+            Library-WebGL-
+
+      - name: Build WebGL Player via GameCI (Docker Headless)
+        uses: game-ci/unity-builder@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          targetPlatform: WebGL
+          unityVersion: 2021.3.20f1
+          projectPath: port/UnityProject/ExportedProject
+          buildMethod: WebBuildScript.Build
+
+      - name: Upload WebGL Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: BombRushCyberfunk-WebAssembly
+          path: build/WebGL/WebGL
+
+      - name: Deploy to GitHub Pages (Opcional)
+        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: build/WebGL/WebGL
