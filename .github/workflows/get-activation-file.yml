@@ -1,0 +1,38 @@
+name: Generate Unity Activation File (.alf)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  activation:
+    name: Generate .alf file via Docker
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate .alf Activation File
+        run: |
+          docker run --rm \
+            -v "$GITHUB_WORKSPACE:/project" \
+            -w /project \
+            unityci/editor:ubuntu-2021.3.20f1-webgl-3 \
+            /opt/unity/Editor/Unity \
+              -batchmode \
+              -nographics \
+              -createManualActivationFile \
+              -logfile /project/activation.log || true
+
+      - name: Locate ALF File
+        run: |
+          echo "=== Generated Files ==="
+          ls -la *.alf || find . -name "*.alf" || true
+          cat activation.log | tail -n 50 || true
+
+      - name: Upload ALF Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Unity_v2021.3.20f1_ActivationFile
+          path: |
+            *.alf
+            **/*.alf
